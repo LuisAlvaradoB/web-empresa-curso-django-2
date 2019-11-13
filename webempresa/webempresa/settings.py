@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'services.apps.ServicesConfig',
     'blog',
     'ckeditor',
+    'contact',
     'social.apps.SocialConfig',
     'pages.apps.PagesConfig'
 ]
@@ -130,3 +131,9 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Email config
+EMAIL_HOST = 'smtp.mailtrap.io'
+EMAIL_HOST_USER = 'fc860c8c3f897d'
+EMAIL_HOST_PASSWORD = '6f5744fb400206'
+EMAIL_PORT = '2525'
