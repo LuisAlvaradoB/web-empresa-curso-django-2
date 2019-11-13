@@ -32,6 +32,9 @@ urlpatterns = [
     #path del pages
     path('page/', include('pages.urls')),
 
+    #path del contact
+    path('contact/', include('contact.urls')),
+
     #path del admin
     path('admin/', admin.site.urls),
 ]
